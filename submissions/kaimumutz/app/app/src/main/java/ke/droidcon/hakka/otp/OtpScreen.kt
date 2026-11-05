@@ -172,7 +172,7 @@ private fun OtpSheet(
     Column(
         Modifier
             .fillMaxWidth()
-            .fillMaxHeight(0.88f)
+            .fillMaxHeight(0.86f)
             .clip(RoundedCornerShape(topStart = 32.dp, topEnd = 32.dp))
             .background(colors.sheet)
             .navigationBarsPadding()
@@ -405,11 +405,10 @@ private fun BackgroundContent() {
             .fillMaxSize()
             .background(MaterialTheme.colorScheme.background)
             .statusBarsPadding()
-            .blur(8.dp)
-            .padding(24.dp),
+            .blur(6.dp)
+            .padding(horizontal = 24.dp, vertical = 16.dp),
         horizontalAlignment = Alignment.CenterHorizontally,
     ) {
-        Spacer(Modifier.height(32.dp))
         Text(
             stringResource(R.string.otp_background_title),
             style = MaterialTheme.typography.headlineSmall,
